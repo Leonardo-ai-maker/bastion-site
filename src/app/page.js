@@ -1,7 +1,11 @@
+import Hero from '../components/Hero'
+import Services from '../components/Services'
+
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center justify-center bg-gray-900 text-white">
-      <h1 className="text-4xl font-bold">Bastion Technologies 🚀</h1>
+    <main>
+      <Hero />
+      <Services />
     </main>
-  );
+  )
 }
