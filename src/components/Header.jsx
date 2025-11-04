@@ -8,7 +8,7 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         <div className="flex items-center space-x-3">
           <Image
-            src="/bastion_logo.jpg"
+            src="/bastion_logo.png"
             alt="Bastion Logo"
             width={48}
             height={48}
