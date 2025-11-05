@@ -4,23 +4,32 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="bg-[#1D2D3D] text-white shadow-md">
+    <header className="fixed top-0 left-0 w-full bg-[#1D2D3D]/90 backdrop-blur-md text-white shadow-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
-        <div className="flex items-center space-x-3">
+        <Link href="/" className="flex items-center space-x-3">
           <Image
             src="/bastion_logo.png"
             alt="Bastion Logo"
-            width={48}
+            width={160}   // ⬅️ aumente o tamanho da logo
             height={48}
-            className="rounded-md"
+            className="h-auto w-auto"
+            priority
           />
-          <span className="text-xl font-semibold tracking-wide">Bastion</span>
-        </div>
-        <nav className="hidden md:flex space-x-8 text-sm uppercase">
-          <Link href="#home" className="hover:text-[#87909F] transition">Início</Link>
-          <Link href="#services" className="hover:text-[#87909F] transition">Serviços</Link>
-          <Link href="#about" className="hover:text-[#87909F] transition">Sobre</Link>
-          <Link href="#contact" className="hover:text-[#87909F] transition">Contato</Link>
+        </Link>
+
+        <nav className="hidden md:flex space-x-8 text-sm tracking-wide uppercase">
+          <Link href="#home" className="hover:text-[#87909F] transition-colors">
+            Início
+          </Link>
+          <Link href="#services" className="hover:text-[#87909F] transition-colors">
+            Serviços
+          </Link>
+          <Link href="#about" className="hover:text-[#87909F] transition-colors">
+            Sobre
+          </Link>
+          <Link href="#contact" className="hover:text-[#87909F] transition-colors">
+            Contato
+          </Link>
         </nav>
       </div>
     </header>
