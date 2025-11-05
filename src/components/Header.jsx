@@ -10,8 +10,8 @@ export default function Header() {
           <Image
             src="/bastion_logo.png"
             alt="Bastion Logo"
-            width={140}
-            height={40}
+            width={130}
+            height={30}
             className="h-auto w-auto sm:w-[100px] md:w-[140px]"
             priority
           />
