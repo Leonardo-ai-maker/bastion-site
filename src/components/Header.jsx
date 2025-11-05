@@ -11,7 +11,7 @@ export default function Header() {
             src="/bastion_logo.png"
             alt="Bastion Logo"
             width={160}   // ⬅️ aumente o tamanho da logo
-            height={48}
+            height={20}
             className="h-auto w-auto"
             priority
           />
