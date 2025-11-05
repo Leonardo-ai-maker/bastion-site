@@ -8,15 +8,15 @@ export default function Header() {
       <div className="max-w-7xl mx-auto flex justify-between items-center py-1 px-4">
         <Link href="/" className="flex items-center">
           <div className="p-[3px] rounded-md bg-gradient-to-r from-[#87909F] to-transparent">
-            <Image
-              src="/bastion_logo.png"
-              alt="Bastion Logo"
-              width={90}
-              height={28}
-              className="h-auto w-auto sm:w-[70px] md:w-[90px] rounded-sm bg-[#1D2D3D]"
-              priority
-            />
-          </div>
+  <Image
+    src="/bastion_logo.png"
+    alt="Bastion Logo"
+    width={90}
+    height={28}
+    className="h-auto w-auto sm:w-[70px] md:w-[90px] rounded-sm bg-[#1D2D3D]"
+    priority
+  />
+</div>
         </Link>
 
         <nav className="hidden md:flex space-x-4 text-[11px] font-medium tracking-wide uppercase">
