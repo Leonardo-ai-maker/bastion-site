@@ -7,7 +7,7 @@ export default function Header() {
     <header className="fixed top-0 left-0 w-full bg-[#1D2D3D]/95 backdrop-blur-sm text-white shadow-md z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-1 px-4">
         <Link href="/" className="flex items-center">
-          <div className="p-[3px] rounded-md bg-gradient-to-r from-[#87909F] to-transparent">
+          <div className="rounded-md shadow-[0_0_10px_rgba(255,255,255,0.15)]">
   <Image
     src="/bastion_logo.png"
     alt="Bastion Logo"
