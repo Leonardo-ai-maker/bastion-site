@@ -4,15 +4,15 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <header className="fixed top-0 left-0 w-full bg-[#1D2D3D]/95 backdrop-blur-sm text-white shadow-md z-50">
+    <header className="fixed top-0 left-0 w-full bg-[#2E3E52]/90 backdrop-blur-sm text-white shadow-md z-50 transition-all duration-300">
       <div className="max-w-7xl mx-auto flex justify-between items-center py-2 px-4">
         <Link href="/" className="flex items-center space-x-2">
           <Image
             src="/bastion_logo.png"
             alt="Bastion Logo"
-            width={120}   // tamanho reduzido
-            height={36}
-            className="h-auto w-auto"
+            width={140}
+            height={40}
+            className="h-auto w-auto sm:w-[100px] md:w-[140px]"
             priority
           />
         </Link>
