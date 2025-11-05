@@ -1,21 +1,21 @@
 export default function Hero() {
   return (
-    <section
-      id="home"
-      className="bg-[#1D2D3D] text-white flex flex-col items-center justify-center text-center py-24 px-6"
-    >
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">
-        Transforme dados em decisões com a <span className="text-[#87909F]">Bastion</span>
-      </h1>
-      <p className="text-[#87909F] max-w-2xl text-lg md:text-xl">
-        Consultoria e desenvolvimento em Ciência de Dados, Inteligência Artificial e soluções digitais personalizadas.
-      </p>
-      <a
-        href="#contact"
-        className="mt-8 bg-white text-[#1D2D3D] px-6 py-3 rounded-xl font-semibold hover:bg-[#87909F] hover:text-white transition"
-      >
-        Fale Conosco
-      </a>
+    <section className="relative h-screen w-full overflow-hidden flex items-center justify-center">
+      <video
+        className="absolute top-0 left-0 w-full h-full object-cover"
+        src="/earth.mp4"
+        autoPlay
+        loop
+        muted
+        playsInline
+      />
+      <div className="absolute inset-0 bg-[#1D2D3D]/70" /> {/* camada translúcida */}
+      <div className="relative z-10 text-center px-6">
+        <h1 className="text-4xl md:text-6xl font-bold mb-4">Bastion Technologies</h1>
+        <p className="text-lg md:text-xl text-gray-300">
+          Inovação em Ciência de Dados, Desenvolvimento de Software e Inteligência Artificial.
+        </p>
+      </div>
     </section>
-  );
+  )
 }
