@@ -7,6 +7,9 @@ import Footer from '../components/Footer'
 export const metadata = {
 title: 'Bastion Technologies — Inteligência em dados e imagens',
 description: 'Desenvolvimento de software, ciência de dados e soluções em IA para análise de imagens e dados.',
+  icons: {
+    icon: "/bastion_icon.png", // caminho dentro de /public
+  },
 }
 
 
